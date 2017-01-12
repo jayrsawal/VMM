@@ -1,0 +1,48 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #5f9c9c;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding: 15px 15px 0px 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.body-content input {
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+    height: 100%;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #405367;
+    color: white;
+}
+
+.center-content {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 400px;
+}
+
+#register {
+    width: 50%;
+}
+
+#snackbar {
+    cursor: pointer;
+}
+
+.popover {
+    width: 400px;
+}

@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model VMM.Models.RegisterModel
+<div class="row center-content" id="register">
+    <form id="register-form" class="form-horizontal" action="/auth/register" method="post">
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Username" class="form-control input-validation-error text-box single-line" id="Username" type="text" value="" data-val-required="The Username field is required." data-val="true" placeholder="Username">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Email" class="form-control input-validation-error text-box single-line" id="Email" type="email" value="" data-val-required="The Email field is required." data-val="true" placeholder="Email Address">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="Password" class="form-control input-validation-error text-box single-line password" id="Password" type="password" value="" data-html="true" data-toggle="valid-password" title="Password Requirements" data-content="Passwords must contain: <ul><li>Atleast 8 characters</li><li>Atleast one special character ($#_)</li><li>A mix of lower case and upper case letters</li></ul>" data-val-required="The Password field is required." data-val="true" placeholder="Choose your password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input name="ReturnUrl" class="form-control input-validation-error text-box single-line password" id="ReturnUrl" type="hidden" value="" data-val="true">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input type="submit" class="btn btn-default" value="Register" id="register-btn" />
+            </div>
+        </div>
+    </form>
+    @Html.ValidationSummary(true)
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/auth")

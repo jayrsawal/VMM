@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model VMM.Models.LoginModel
+
+<div class="row">
+    @using (Html.BeginForm()) {
+        <div>Username: <input name="Username" class="input-validation-error text-box single-line" id="Username" type="text" value="" data-val-required="The Username field is required." data-val="true"></div>
+            <div>Password: <input name="Password" class="input-validation-error text-box single-line password" id="Password" type="password" value="" data-val-required="The Password field is required." data-val="true"></div>
+            <input type="submit" value="Login" />
+    }
+    <div id="cursor"></div>
+    @Html.ValidationSummary(true)
+
+    Not a member yet? <a href="~/Auth/Register">Register Now</a>
+</div>
