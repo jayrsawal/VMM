@@ -18,23 +18,32 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Measure Me", "Index", "Main", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Victoria Marie", "Index", "Main", new { area = "" }, new { @class = "navbar-brand", @id = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Main")</li>
+                <ul class="nav navbar-nav navbar-right">
+                    @*<li>@Html.ActionLink("Home", "Index", "Main")</li>*@
+                    <li class="contact-btn"><a>Contact Me</a></li>
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
-
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-sm-12 vertical-align">
+                <h2>VICTORIA MARIE</h2>
+                <img src="img/icons/vm_logo_flat.png" />
+            </div>
+        </div>
+    </div>
     <div class="container container-table body-content center-content">
-            @RenderBody()
+        @RenderBody()
     </div>
     <div id="snacks"></div>
+    <footer class="footer">
+        <div class="container center-content text-muted">Copyright © 2015 <a href="">Victoria Marie</a>. All Rights Reserved.</div>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/js")

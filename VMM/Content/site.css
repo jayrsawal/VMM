@@ -1,42 +1,125 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    background-color: #5f9c9c;
+﻿@font-face {
+    font-family: geomanist;
+    src: url(geomanist-regular-webfont.ttf);
+}
+
+* {
+    font-family: geomanist, 'Lucida Sans' !important;
+}
+
+body {
+    background: url(../img/confectionary/confectionary.png) repeat;
+}
+
+footer {
+    color: white;
+    background-color: #383838;
+    padding: 25px;
+}
+
+footer a {
+    color:white;
+}
+
+footer a:hover {
+    color: #ffd800;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding: 15px 15px 0px 15px;
+    padding: 0px 15px 0px 15px;
 }
 
+.content-box {
+    margin: 0 0;
+    padding: 50px 50px 75px 50px;
+    background-color: white;
+    text-align: justify;
+}
+
+.content-box div[class^=col-sm-]{
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    background: url(../img/home_cover2.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.jumbotron .container {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    top: 0;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.col-vertical-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.jumbotron h2 {
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.jumbotron img {
+    position: relative;
+    height: 15%;
+    width: 15%;
+    opacity: 0.7;
+    -webkit-animation: fade-down 1s;
+    -moz-animation: fade-down 1s;
+    -ms-animation: fade-down 1s;
+    -o-animation: fade-down 1s;
+    animation: fade-down 1s;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
+.navbar {
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+#navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+ul.nav li a {
+    color: white !important;
+}
+
+.navbar-nav > li > a, .navbar-header > a, .navbar-header > button {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
 .dl-horizontal dt {
     white-space: normal;
-}
-
-.body-content input {
-    border: none;
-    border-radius: 0;
-    padding: 15px;
-    height: 100%;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color: #405367;
-    color: white;
 }
 
 .center-content {
     margin: 0 auto;
     width: 100%;
     min-width: 400px;
-}
-
-#register {
-    width: 50%;
 }
 
 #snackbar {

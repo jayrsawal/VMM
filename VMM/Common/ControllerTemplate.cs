@@ -27,11 +27,11 @@ namespace VMM.Common {
 
             switch (this.strEnv) {
                 case "production":
-                    strConn = ConfigurationManager.ConnectionStrings["MMEProd"].ConnectionString;
+                    strConn = ConfigurationManager.ConnectionStrings["JPROD"].ConnectionString;
                     break;
 
                 default:
-                    strConn = ConfigurationManager.ConnectionStrings["MMETest"].ConnectionString;
+                    strConn = ConfigurationManager.ConnectionStrings["JPROD"].ConnectionString;
                     break;
             }
 
