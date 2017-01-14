@@ -18,7 +18,9 @@ namespace VMM {
                       , "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/js").Include(
-                      "~/Scripts/site.js"));
+                      "~/Scripts/site.js"
+                      , "~/Scripts/parallax.min.js"
+                      , "~/Scripts/scrollreveal.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/auth").Include(
                       "~/Scripts/login.js"));

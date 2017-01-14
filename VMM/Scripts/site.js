@@ -18,3 +18,9 @@ function addSnackListener() {
         $(this).remove();
     });
 }
+
+
+$(document).ready(function () {
+    window.sr = ScrollReveal();
+    sr.reveal(".scroll-reveal", {duration: 1000, distance: "100px"});
+});

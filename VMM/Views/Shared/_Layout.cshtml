@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Page - @ViewBag.Title</title>
+    <title>@ViewBag.Page</title>
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/bundles/css")
 
@@ -24,7 +24,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     @*<li>@Html.ActionLink("Home", "Index", "Main")</li>*@
-                    <li class="contact-btn"><a>Contact Me</a></li>
+                    @*<li class="contact-btn"><a>Contact Me</a></li>*@
                 </ul>
             </div>
         </div>
@@ -32,8 +32,8 @@
     <div class="jumbotron">
         <div class="container">
             <div class="col-sm-12 vertical-align">
-                <h2>VICTORIA MARIE</h2>
-                <img src="img/icons/vm_logo_flat.png" />
+                <h2 class="scroll-reveal">VICTORIA MARIE</h2>
+                <img class="scroll-reveal" src="~/img/icons/victoria-marie-logo.png" />
             </div>
         </div>
     </div>
@@ -48,5 +48,12 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/js")
     @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+    @if (@ViewBag.Snack != null)
+    {
+        @:snack("@ViewBag.Snack");
+    }
+    </script>
 </body>
 </html>
