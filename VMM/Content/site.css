@@ -153,6 +153,8 @@ a:hover {
 }
 
 #navbar-brand {
+    padding: 16px 0;
+    font-size: 24px;
     font-weight: bold;
     color: white;
 }
@@ -162,8 +164,7 @@ ul.nav li a {
 }
 
 .navbar-nav > li > a, .navbar-header > a, .navbar-header > button {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding: 5px;
 }
 
 .dl-horizontal dt {
