@@ -6,7 +6,9 @@
 * {
     font-family: geomanist, 'Lucida Sans' !important;
 }
-
+.container {
+    max-width: 100%;
+}
 body {
     background: url(../img/confectionary/confectionary.png) repeat;
 }
@@ -15,6 +17,8 @@ footer {
     color: white;
     background-color: #383838;
     padding: 25px;
+    width: 100%;
+    min-width: 500px;
 }
 
 a {
@@ -25,7 +29,10 @@ a {
 a:hover {
     color: #ffd800;
 }
-
+iframe {
+    width: 100%;
+    min-height: 50vh;
+}
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -46,6 +53,7 @@ a:hover {
 .contact-me div {
     padding: 10px;
     margin: 0;
+    width: 100%;
 }
 
 .contact-me input, .contact-me button {
@@ -104,6 +112,7 @@ a:hover {
     margin: 0;
     padding: 0;
     height: 100vh;
+    min-width: 500px;
 }
 
     .jumbotron .container {
@@ -153,7 +162,7 @@ a:hover {
 }
 
 #navbar-brand {
-    padding: 16px 0;
+    padding: 16px 16px;
     font-size: 24px;
     font-weight: bold;
     color: white;
@@ -173,8 +182,8 @@ ul.nav li a {
 
 .center-content {
     margin: 0 auto;
-    width: 100%;
-    min-width: 400px;
+    width: 80%;
+    min-width: 500px;
 }
 
 #snackbar {
@@ -183,4 +192,25 @@ ul.nav li a {
 
 .popover {
     width: 400px;
+}
+
+@media (max-width:1024px) {
+    .center-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .content-box {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+@media (max-width:499px){
+
 }
